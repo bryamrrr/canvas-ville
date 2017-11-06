@@ -7,7 +7,6 @@ background.addEventListener('load', drawMap);
 
 const vaca = new Image();
 vaca.src = 'images/vaca.png';
-vaca.addEventListener('load', drawVaca);
 
 const pollo = new Image();
 pollo.src = 'images/pollo.png';
@@ -19,6 +18,18 @@ cerdo.addEventListener('load', drawCerdo);
 
 function drawMap() {
   canvas.drawImage(background, 0, 0);
+
+  const vaca = new Image();
+  vaca.src = 'images/vaca.png';
+  vaca.addEventListener('load', drawVaca);
+
+  const pollo = new Image();
+  pollo.src = 'images/pollo.png';
+  pollo.addEventListener('load', drawPollo);
+
+  const cerdo = new Image();
+  cerdo.src = 'images/cerdo.png';
+  cerdo.addEventListener('load', drawCerdo);
 }
 
 function drawVaca() {
